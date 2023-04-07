@@ -1,3 +1,5 @@
+[Settings]
+  ID = "0e4330ef-fdae-41fa-a132-8fd1a04db69e"
 [build]
   command = "npm install && npm run build"
   functions="api"

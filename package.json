@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "netlify dev",
-    "build": "CI= netlify build"
+    "build": "CI= netlify build api"
   },
   "author": "",
   "license": "ISC",
