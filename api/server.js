@@ -14,7 +14,7 @@ const baseUrl = '/githubOauth';
  */
 router.get(`${baseUrl}/getAccessToken`, async function (req, res) {
   const response = await fetch(
-    `https://github.com/login/oauth/access_token?client_id=${client_id}&client_secret=${secret}&code=${req.query.code}`,
+    `https://github.com/login/oauth/access_token?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}&code=${req.query.code}`,
     { method: 'POST', headers: { Accept: 'application/json' } }
   );
   const data = await response.json();
@@ -149,7 +149,6 @@ router.put(
 );
 
 router.get('/', (req, res) => {
-  console.log(process.env.CLIENT_ID);
   res.send('successfully deployed');
 });
 
