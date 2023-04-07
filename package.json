@@ -5,8 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "netlify dev",
-    "build": ""
+    "start": "netlify dev"
   },
   "author": "",
   "license": "ISC",
