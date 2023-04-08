@@ -1,7 +1,7 @@
 [build]
   command = "npm install && npm run build"
   functions="api"
-  publish="dist"
+  publish="api"
 [[redirects]]
   from = "/"
   to = "/.netlify/functions/server"
