@@ -2,3 +2,7 @@
   command = "npm install && npm run build"
   functions="api"
   publish="dist"
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/server"
+  status = 200
