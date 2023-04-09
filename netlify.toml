@@ -6,7 +6,7 @@
   external_node_modules = ["express"]
 [[redirects]]
   from = "/githubOauth/"
-  to = "http://localhost:8888/.netlify/functions/server"
+  to = "http://localhost:8888/.netlify/functions/server/"
   status=200
   force = true
   headers = {X-From = "Netlify"}
