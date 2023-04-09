@@ -121,7 +121,7 @@ router.post(`${baseUrl}/create/:owner/:repo`, async function (req, res) {
       body: JSON.stringify(req.body),
     }
   );
-  const data = response.json();
+  const data = await response.json();
   res.json(data);
 });
 
