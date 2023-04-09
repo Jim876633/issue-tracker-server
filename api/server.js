@@ -148,7 +148,7 @@ router.put(
   }
 );
 
-router.get('/', (req, res) => {
+router.get('/githubOauth', (req, res) => {
   res.send('successfully deployed');
   res.text('prod environments');
 });
