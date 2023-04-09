@@ -1,11 +1,11 @@
 [build]
   command = "npm install && npm run build"
   functions="api"
-  publish="api"
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express"]
 [[redirects]]
-  from = "/"
-  to = "/.netlify/functions/server"
-  status = 200
+  from = "/githubOauth/"
+  to = "http://localhost:8888/.netlify/functions/server"
+  status=200
+  force = true

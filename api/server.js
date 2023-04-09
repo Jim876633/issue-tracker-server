@@ -151,6 +151,9 @@ router.put(
 router.get('/', (req, res) => {
   res.send('successfully deployed');
 });
+router.get('/test', (req, res) => {
+  res.send('successfully deployed');
+});
 
 app.use('/.netlify/functions/server', router);
 export const handler = serverlessHttp(app);
