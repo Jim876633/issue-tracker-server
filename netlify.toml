@@ -7,6 +7,10 @@
 [[redirects]]
   from = "/githubOauth/*"
   to = "http://localhost:8888/.netlify/functions/server/:split"
-  status=200
+  status = 200
   force = true
   headers = {X-From = "Netlify"}
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
