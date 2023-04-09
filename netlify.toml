@@ -9,3 +9,4 @@
   to = "http://localhost:8888/.netlify/functions/server"
   status=200
   force = true
+  headers = {X-From = "Netlify"}
