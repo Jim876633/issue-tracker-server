@@ -150,6 +150,7 @@ router.put(
 
 router.get('/', (req, res) => {
   res.send('successfully deployed');
+  res.json('prod environments');
 });
 
 app.use('/.netlify/functions/server', router);
