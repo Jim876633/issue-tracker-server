@@ -5,12 +5,8 @@
   node_bundler = "esbuild"
   external_node_modules = ["express"]
 [[redirects]]
-  from = "/githubOauth/*"
-  to = "http://localhost:8888/.netlify/functions/server/:split"
+  from = "/githubOauth"
+  to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
