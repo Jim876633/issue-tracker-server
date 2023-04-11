@@ -143,7 +143,7 @@ router.put(
         body: JSON.stringify(req.body),
       }
     );
-    const data = response.json();
+    const data = await response.json();
     res.json(data);
   }
 );
