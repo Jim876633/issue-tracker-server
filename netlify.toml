@@ -6,6 +6,7 @@
   to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/githubOauth/:splat"
   status = 200
   force = true
+  headers = {X-From = "Netlify"}
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express"]
