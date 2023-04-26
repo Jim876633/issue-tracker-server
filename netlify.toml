@@ -4,11 +4,11 @@
 [[redirects]]
   from = "/githubOauth/*"
   to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/githubOauth/:splat"
-  status = 200
+  status = 301
 [[redirects]]
   from = "/*"
   to = "https://jim-issues-tracker-server.netlify.app/:splat"
-  status = 200
+  status = 301
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express"]
