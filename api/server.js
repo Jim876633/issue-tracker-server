@@ -13,8 +13,6 @@ const baseUrl = '/githubOauth';
  * get user's access token
  */
 router.get(`${baseUrl}/getAccessToken`, async function (req, res) {
-  console.log(process.env);
-  console.log(process.env.CLIENT_ID);
   const response = await fetch(
     `https://github.com/login/oauth/access_token?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}&code=${req.query.code}`,
     { method: 'POST', headers: { Accept: 'application/json' } }
