@@ -3,7 +3,7 @@
   functions="api"
 [[redirects]]
   from = "/githubOauth/*"
-  to = "/.netlify/functions/server/githubOauth/:splat"
+  to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/githubOauth/:splat"
   status = 200
 [functions]
   node_bundler = "esbuild"
