@@ -4,7 +4,3 @@
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express"]
-[[redirects]]
-  from = "/gihubOauth/*"
-  to = "/.netlify/functions/server/githubOauth/:splat"
-  status = 200
