@@ -1,6 +1,10 @@
 [build]
   command = "npm install && npm run build"
   functions="api"
+[[redirects]]
+  from = "/githubOauth/*"
+  to = "/.netlify/functions/server/githubOauth/:splat"
+  status = 200
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express"]
