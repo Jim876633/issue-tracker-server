@@ -2,12 +2,12 @@
   command = "npm install && npm run build"
   functions="api"
 [[redirects]]
-  from = "/*"
-  to = "https://jim-issues-tracker-server.netlify.app/:splat"
-  status = 200
-[[redirects]]
   from = "/githubOauth/*"
   to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/githubOauth/:splat"
+  status = 200
+[[redirects]]
+  from = "/*"
+  to = "https://jim-issues-tracker-server.netlify.app/:splat"
   status = 200
 [functions]
   node_bundler = "esbuild"
