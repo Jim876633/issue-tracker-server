@@ -7,6 +7,7 @@
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN_PLACEHOLDER"
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["express"]
