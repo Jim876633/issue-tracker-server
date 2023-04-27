@@ -1,12 +1,13 @@
 [build]
   command = "npm install && npm run build"
   functions="api"
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["express"]
 [[redirects]]
   from = "/githubOauth/*"
   to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/githubOauth/:splat"
   status = 200
   force = true
-  signed = "API_SIGNATURE_TOKEN_PLACEHOLDER"
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["express"]
