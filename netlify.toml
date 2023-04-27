@@ -2,11 +2,10 @@
   command = "npm install && npm run build"
   functions="api"
 [[redirects]]
-  from = "/githubOauth/*"
-  to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/githubOauth/:splat"
+  from = "/*"
+  to = "https://jim-issues-tracker-server.netlify.app/.netlify/functions/server/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
   signed = "API_SIGNATURE_TOKEN"
 [functions]
   node_bundler = "esbuild"
