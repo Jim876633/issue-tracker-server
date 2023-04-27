@@ -153,5 +153,5 @@ router.get('/githubOauth', (req, res) => {
   res.text('prod environments');
 });
 
-app.use('/.netlify/functions/server', router);
+app.use('/', router);
 export const handler = serverlessHttp(app);
